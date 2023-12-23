@@ -1,4 +1,8 @@
-git ## Collections Performance
+## Collections Performance
+
+This is just a sample benchmark using Instant.now();
+
+For better results and more accurate is recommended to use Java Microbenchmark Harness (JMH).
 
 | List                 | Add  | Remove | Get  | Contains | Next | Data Structure |
 |----------------------|------|--------|------|----------|------|----------------|
