@@ -66,13 +66,14 @@ public class BreadthFirstSearch {
 
     public static void main(String[] args) {
         SocialGraph socialGraph = new SocialGraph(7);
+
         socialGraph.addFriendship(0, 1);
         socialGraph.addFriendship(0, 2);
         socialGraph.addFriendship(1, 3);
-        socialGraph.addFriendship(1, 5);
         socialGraph.addFriendship(2, 3);
-        socialGraph.addFriendship(3, 4);
-        socialGraph.addFriendship(4, 5);
+        socialGraph.addFriendship(1, 5);
+        socialGraph.addFriendship(3, 5);
+        socialGraph.addFriendship(5, 4);
         socialGraph.addFriendship(4, 6);
         socialGraph.addFriendship(5, 6);
 
