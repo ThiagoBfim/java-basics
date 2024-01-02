@@ -7,7 +7,7 @@ import java.util.Stack;
 public class SlidingWindows {
 
     public static void main(String[] args) {
-        String s1 = "abcabcbbd";
+        String s1 = "abcabcbb";
         System.out.println("Length of Longest Substring (s1): " + lengthOfLongestSubstring(s1));
     }
 
@@ -20,8 +20,8 @@ public class SlidingWindows {
         while (right < s.length()) {
             if (!uniqueCharacters.contains(s.charAt(right))) {
                 uniqueCharacters.add(s.charAt(right));
-                maxLength = Math.max(maxLength, right - left + 1);
                 right++;
+                maxLength = Math.max(maxLength, right - left);
             } else {
                 uniqueCharacters.remove(s.charAt(left));
                 left++;
